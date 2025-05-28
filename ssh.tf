@@ -1,5 +1,5 @@
 resource "aws_key_pair" "vm_ssh_key" {
-    key_name = "student-vm-key"
+    key_name = var.key_name
     public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCYoMR5JDWruQIe9waVcySDC9C26uNK+KkfBl2rg95APqWnyfquGKn1pTd9llwRpdDSBiKMOssEaYUiR2ElprmaPBv7GjSgcQtzlpaVXMOfTPVbhhB3m2u29yF26FFJOvtTrdLeYpfPTY/s2M9WBbCZVTHwQnkH/8hBh5i/z+VlKHzZjyGbfgBAICoVC0s/Se13tccedFiOoZ/bA0GUYE3nsHCNXOy3YfoMJSnqcUT3Bshiu43VBJabDCvVmqD0LFWsulNsjncdZ9iFyRj76kvZIZ6cd7XlK+fqQLCigzcpmRaovMIcWhbc8f1xCUmaGvKgpKgc/gcn8Ae7R6hwNFtd/PZviBiDZWjLn5/jsHhwySW0JrOhjPLMekVcF8Ht1dl6QCeXP/DlteUcsnzC3hmRICKdD1CwLTIwBDaByuySzvVlBR78HrzQL0BApQD2Mhzs9tXmCdjGxP8oXqd4S5rwrgcPSo9FGKJVPgX5SZJi28e3Y1Bxz9tjXGUk+ab5SrU= lakshya@ubuntu"
   
 }

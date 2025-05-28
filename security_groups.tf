@@ -1,5 +1,5 @@
 resource "aws_security_group" "open_ports" {
-    name = "student-security-group"
+    name = var.security_group_name
     vpc_id = aws_vpc.main-vpc.id
 
     ingress {
