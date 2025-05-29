@@ -9,6 +9,20 @@ resource "aws_security_group" "open_ports" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
+    ingress {
+        description = "allow ingress on port 80"
+        from_port = 80
+        to_port = 80
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+    ingress {
+        description = "allow ingress on port 8000-8999"
+        from_port = 8000
+        to_port = 8999
+        protocol = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
     egress {
         description = "allows unlimited egress"
         from_port = 0
